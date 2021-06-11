@@ -28,7 +28,7 @@ async def start(bot, update):
             await update.reply_text(
                 text="<b>🔊 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🤭.\n\nനിങ്ങൾക്ക് മൂവീസ് വേണോ? എങ്കിൽ തായെ കാണുന്ന ഞങ്ങളുടെ മെയിൻ ചാനലിൽ ജോയിൻ ചെയ്യുക.😂\nഎന്നിട്ട് ഗ്രൂപ്പിൽ പോയി വീണ്ടും മൂവിയിൽ ക്ലിക് ചെയ്ത് start കൊടുത്തു നോക്കൂ..!😁</b>",
                 reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text=" 💢 𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎𝚜 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 💢 ", url=f"")]
+                    [ #InlineKeyboardButton(text=" 💢 𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎𝚜 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 💢 ", url=f"")]
               ])
             )
             return
@@ -59,10 +59,7 @@ async def start(bot, update):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton
-                                (
-                                    '👨‍💼', url=""
-                                )
+                            InlineKeyboardButton('👨‍💼')
                         ]
                     ]
                 )
@@ -78,10 +75,7 @@ async def start(bot, update):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton
-                                (
-                                    '👨‍💼', url=""
-                                )
+                            InlineKeyboardButton('👨‍💼')
                         ]
                     ]
                 )
@@ -97,10 +91,7 @@ async def start(bot, update):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton
-                                (
-                                    '👨‍💼', url=""
-                                )
+                            InlineKeyboardButton('👨‍💼')
                         ]
                     ]
                 )
@@ -112,13 +103,13 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('👨‍💼 𝙼𝚊𝚜𝚝𝚎𝚛', url=f''),
+        InlineKeyboardButton('👨‍💼 𝙼𝚊𝚜𝚝𝚎𝚛'),
         InlineKeyboardButton('𝙷𝚎𝚕𝚙 🤔', callback_data="help")
     ],[
-        InlineKeyboardButton('👩‍👩‍👧 𝙶𝚛𝚘𝚞𝚙', url=f''),
-        InlineKeyboardButton('𝙲𝚑𝚊𝚗𝚗𝚎𝚕 🔊', url=f'')
+        InlineKeyboardButton('👩‍👩‍👧 𝙶𝚛𝚘𝚞𝚙'),
+        InlineKeyboardButton('𝙲𝚑𝚊𝚗𝚗𝚎𝚕 🔊')
     ],[
-        InlineKeyboardButton('🖥️', url='')
+        InlineKeyboardButton('🖥️')
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -157,10 +148,10 @@ async def help(bot, update):
 async def about(bot, update):
     
     buttons = [[
-        InlineKeyboardButton('👤', url=''),
-        InlineKeyboardButton('👤', url='')
+        InlineKeyboardButton('👤'),
+        InlineKeyboardButton('👤')
     ],[
-        InlineKeyboardButton('👤', url='')
+        InlineKeyboardButton('👤')
     ],[
         InlineKeyboardButton('🏠 𝙷𝚘𝚖𝚎', callback_data='start'),
         InlineKeyboardButton('𝙲𝚕𝚘𝚜𝚎 🔐', callback_data='close')
